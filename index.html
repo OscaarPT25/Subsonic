@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prueba - Repositorio</title>
+  <style>
+    body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial; margin: 2rem; background: #f6f8fa; color: #0b0b0b; }
+    button { padding: 0.5rem 0.75rem; font-size: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Prueba del repositorio</h1>
+  <p>Este archivo sirve para comprobar que el repositorio funciona correctamente.</p>
+  <p id="time"></p>
+  <button id="btn">Mostrar hora</button>
+  <script>
+    document.getElementById('btn').addEventListener('click', function () {
+      document.getElementById('time').textContent = new Date().toString();
+    });
+  </script>
+</body>
+</html>
